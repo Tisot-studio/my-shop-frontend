@@ -1,0 +1,119 @@
+@import '../../utils';
+
+.sign-in {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-family: 'Spartan';
+    margin: auto;
+    background: rgba($color: #000000, $alpha: 0.4);
+    animation: auth-page-animation 1s ease-in-out alternate;
+
+
+      .form-sign-in {
+
+        margin-top: 250px;
+        display: flex;
+      text-align: center;
+      width: 900px;
+      background-color: white;
+
+
+          .sign-in-conatainer{
+            display: flex;
+            flex-direction: column;
+            width: 450px;
+            min-height: 460px;
+            background: rgb(255, 255, 255);
+            transition: all 0.5s ease-in-out;
+
+          
+
+          
+            .form-sign-in-nav {
+              margin-top: 20px;
+                display: flex;
+                justify-content: space-around;
+              }
+              
+
+              .sign-in-not-active,
+              .registration-button-not-active {
+                cursor: pointer;
+                color: rgb(182, 182, 182);
+                letter-spacing: 1px;
+              }
+              
+              
+              .sign-in-active {
+                color: black;
+              }
+
+              .registration-button-active {
+                    color: black;
+              }
+            }
+
+            .forgot-password {
+              margin-top: 30px;
+              font-size: 12px;
+              cursor: pointer;
+
+              span {
+                color: $blue;
+
+                &:hover {
+                  text-decoration: underline;
+                }
+              }
+            }
+
+
+        }
+    
+    }
+
+    .auth-img-container {
+      background: url('../../images/fashion/7.jpg') no-repeat center center/cover;
+      width: 450px;
+      min-height: 460px;
+      display: flex;
+      justify-content: flex-end;
+
+        .auth-close-button {
+          padding: 20px 20px;
+          cursor: pointer;
+          font-weight: lighter;
+        }
+    }
+
+
+    
+    @keyframes auth-page-animation {
+      0% {
+          opacity:0;
+        }
+        45% {
+        opacity:1;
+        }
+        55% {
+        opacity:1;
+        }
+        100% {
+        opacity:1;
+        }
+  }
+
+// Убирает заполнение фона браузера, делает его белым
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover, 
+  input:-webkit-autofill:focus, 
+  input:-webkit-autofill:active  {
+      -webkit-box-shadow: 0 0 0 30px rgb(255, 255, 255) inset !important;
+  }

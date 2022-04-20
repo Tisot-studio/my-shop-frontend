@@ -1,0 +1,41 @@
+.user-menu {
+
+font-family: 'Spartan', sans-serif;
+font-weight: bolder;
+
+
+    .user-drop-menue {
+       display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        z-index: 9999;
+        width: 200px;
+        color: rgb(255, 255, 255);
+        border-radius: 12px;
+        background-color: #242424;
+        top: 80px;
+        right: 130px;
+
+        a {
+            color: rgb(255, 255, 255);
+        }
+
+
+
+    .udm-item {
+        padding: 10px 0px;
+        width: 100%;
+        text-align: center;
+        cursor: pointer;
+        font-size: 14px;
+        letter-spacing: 1px;
+
+
+
+    }
+
+    }
+
+}

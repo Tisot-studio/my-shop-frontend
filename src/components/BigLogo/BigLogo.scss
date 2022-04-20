@@ -1,0 +1,27 @@
+@font-face {
+	font-family: 'SansationLight';
+	src: url('./SansationLight.eot');
+	src: local('SansationLight'), url('./SansationLight.woff') format('woff'), url('./SansationLight.ttf') format('truetype');
+}
+
+
+.logo-container {
+    position: absolute;
+
+    .logo {
+        font-size: 3rem;
+        letter-spacing: 22px;
+    }
+
+    p {
+        margin: 10px;
+        font-size: 1.5rem;
+        letter-spacing: 5px;
+    }
+
+    .shopping-link:hover {
+       opacity: 0.9;
+       cursor: pointer;
+    }
+}
+

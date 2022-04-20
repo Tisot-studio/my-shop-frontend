@@ -1,0 +1,46 @@
+@import '../../utils';
+
+.account-activate-page{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: $body;
+
+    h1 {
+        margin-bottom: 30px;
+    }
+
+    .acc-act-login-link {
+        margin-top: 30px;
+        width: 200px;
+        background: $purple;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        border: 0.1px $purple solid;
+        font-size: 14px;
+        cursor: pointer;
+        font-family: $body;
+        letter-spacing: 1px;
+        text-align: center;
+
+    }
+
+
+    button {
+        margin-top: 20px;
+        width: 200px;
+        background: $purple;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        border: 0.1px $purple solid;
+        font-size: 14px;
+        cursor: pointer;
+        font-family: $body;
+        letter-spacing: 1px;
+    }
+
+}

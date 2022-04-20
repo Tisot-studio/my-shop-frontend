@@ -1,0 +1,126 @@
+@import '../../utils';
+
+.order-details-page {
+    font-family: 'Spartan', sans-serif;
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+
+
+
+    h1, p {
+        margin-bottom: 14px;
+        font-size: 18px;
+
+        span {
+            font-weight: bold;
+        }
+    } 
+
+    
+    .order-details-container {
+        width: 50%;
+        padding-left: 5%;
+
+            .od-header-wraper {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-end;
+                width: 100%;
+
+                div.paid {
+                    padding-bottom: 25px;
+                    color: green;
+                }
+
+                div.not-paid {
+                    padding-bottom: 25px;
+                    color: red;
+                }
+
+            }
+
+        h1 {
+            font-size: 24px;
+            padding-top: 100px;
+            margin-bottom: 18px;
+        }
+ 
+            .ord-det-component {
+                display: flex;
+                width: 500px;
+
+                margin: 15px 0 8px 0;
+                border-bottom: $grey 1px solid;
+                font-size: 14px;
+
+                img {
+                    width: 100px;
+                }
+
+                .ord-det-description-wraper {
+                    padding-top: 30px;
+
+
+
+                    div {
+                        margin-bottom: 5px;
+                    }
+                }
+            }
+}
+
+
+.ord-det-general-info-container{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+
+
+    .ord-det-general-info-wraper {
+        height: 500px;
+        position: fixed;
+        padding: 0px 20px;
+        width: 350px;
+
+        h1 {
+            width: 100%;
+            text-align: center;
+        }
+
+
+        .order-price-container {
+            margin-top: 30px;
+            display: flex;
+            flex-direction: column;
+            height: 200px;
+
+        .price, .shipping, .total {
+            display: flex;
+            width: 100%;
+            margin: 10px 0 10px 0;
+            justify-content: space-between;
+        }
+    }
+
+        h1 {
+            font-size: 24px;
+            padding-top: 100px;
+            margin-bottom: 18px;
+        }
+
+        div {
+            margin-bottom: 14px;
+        }
+
+        .pay-button-wraper {
+            padding-top: 20px;
+        }
+    }
+}
+
+
+
+
+
+}

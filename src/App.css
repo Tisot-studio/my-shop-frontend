@@ -1,38 +1,55 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Philosopher&family=Prata&family=Spartan&display=swap');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
   }
+  
+
+::-webkit-scrollbar{
+    width: 6px;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+::-webkit-scrollbar-track{
+    background-color: rgba(255, 0, 0, 0);
+    margin-block: .1em;
 }
 
-.App-link {
-  color: #61dafb;
+::-webkit-scrollbar-thumb{
+    background-color: rgb(95, 95, 95);
+    border-radius: 50px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+/* #viewport {
+    overflow: hidden;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
   }
-  to {
-    transform: rotate(360deg);
+  
+  #scroll-container {
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    will-change: transform;
+    backface-visibility: hidden;
+  } */
+  
+  
+  
+  .font{
+      
+    font-family: 'Libre Caslon Display', serif;
+    font-family: 'Prata', serif;
+    font-family: 'Spartan', sans-serif;
+    font-family: 'Philosopher', sans-serif;
+  
   }
-}

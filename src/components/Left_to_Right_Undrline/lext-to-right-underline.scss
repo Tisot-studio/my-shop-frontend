@@ -1,0 +1,14 @@
+@import '../underline-styles'; 
+
+.left-to-right-underline{
+    @include hover-underline('slide', 'left-in-right');
+      padding: 5px 20px;
+      margin-right: 5px;
+      cursor: pointer;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+ }
+

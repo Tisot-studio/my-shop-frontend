@@ -1,0 +1,33 @@
+@import '../../utils';
+
+
+.nav-icon {
+    padding: 0 20px;
+    display: flex;
+    font-family: $body;
+
+    span {
+        font-size: 14px;
+        margin-left: 3px;
+    }
+   }
+
+
+@media screen and (max-width: 500px) {
+
+    .nav-icon {
+        padding: 0 20px;
+
+
+        p {
+            font-size: 14px;
+        }
+    
+        span {
+            font-size: 8px;
+            margin-left: 0px;
+        }
+       }
+
+}
+ 

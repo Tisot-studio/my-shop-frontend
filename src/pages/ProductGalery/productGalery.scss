@@ -1,0 +1,42 @@
+@import '../../utils';
+
+.product-galery {
+    display: flex;
+    font-family: $body;
+    position: relative;
+    background: $pink;
+    opacity: 1;
+    animation: fadeinanim 1s ease-in-out alternate;
+
+    
+  
+    #cards-container {
+        width: 100%;
+        margin-top: 90px;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        border-top: 1px $grey solid;
+    }
+    
+    
+}
+
+
+
+
+@keyframes fadeinanim {
+    0% {
+        opacity:0;
+      }
+      45% {
+      opacity:1;
+      }
+      55% {
+      opacity:1;
+      }
+      100% {
+      opacity:1;
+      }
+    
+}

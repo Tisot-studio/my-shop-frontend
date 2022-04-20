@@ -1,0 +1,49 @@
+.logo-container {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+
+    span {
+        margin: 0 2px;
+    }
+
+    .hidden-letter {
+        transition: all 0.3s ease-in-out;
+    }
+
+    .central-letter {
+        transition: all 0.3s ease-in-out;
+        // transition-delay: 0.2s;
+    }
+
+    .right-letter {
+        padding-bottom: 31px;
+        transition: transform 0.3s ease-in-out;
+        font-size: 8px;
+    }
+
+    &:hover {
+
+        .hidden-letter {
+            transform: translateY(50px);
+            opacity: 0;
+
+        }
+
+        .central-letter {
+            transform: translateX(80px);
+          
+        }
+        
+        .right-letter {
+            transform: translateX(-80px);
+
+        }
+    }
+
+
+
+}
