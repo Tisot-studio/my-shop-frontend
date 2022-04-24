@@ -5,12 +5,12 @@ export default function Footer() {
         <footer className='section-footer'>
             <div className='footer-section-logo-container'>
                 <p className='footer-logo'>TEXTURA</p>
-                <div className='footer-links'><span onClick={()=> alert('Страница в разработке')}>Terms of Service </span> 
-                <span> | </span> 
-                <span onClick={()=> alert('Страница в разработке')}>Private Policy</span></div>  
+                <div className='footer-links'><span onClick={() => alert('Page is under development')}>Terms of Service </span>
+                    <span> | </span>
+                    <span onClick={() => alert('Page is under development')}>Private Policy</span></div>
             </div>
 
-            <div className='footer-contacts-wraper'> 
+            <div className='footer-contacts-wraper'>
                 <div className='footer-section-contacts-container'>
                     <h2>Contacts</h2>
                     <h6>Email:</h6>
@@ -22,10 +22,10 @@ export default function Footer() {
 
                 <div className='footer-section-contacts-container'>
                     <h2>Subscribe</h2>
-                    <p className='social-link' onClick={()=> alert('Наш инстаграм')}> <i class="fab fa-instagram"></i> Instagram </p>
-                    <p className='social-link' onClick={()=> alert('Наш инстаграм')}> <i class="fab fa-facebook"></i> Facebook</p>
+                    <p className='social-link' onClick={() => alert('Instagram')}> <i class="fab fa-instagram"></i> Instagram </p>
+                    <p className='social-link' onClick={() => alert('Facebook')}> <i class="fab fa-facebook"></i> Facebook</p>
                 </div>
             </div>
-    </footer>
+        </footer>
     )
 }

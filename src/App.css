@@ -1,19 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Philosopher&family=Prata&family=Spartan&display=swap');
 
-
-
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
-  
+/* 
+    font-family: 'Libre Caslon Display', serif;
+    font-family: 'Prata', serif;
+    font-family: 'Spartan', sans-serif;
+    font-family: 'Philosopher', sans-serif;
+   */
 
 ::-webkit-scrollbar{
     width: 6px;
 
 }
-
 
 ::-webkit-scrollbar-track{
     background-color: rgba(255, 0, 0, 0);
@@ -25,31 +22,3 @@
     border-radius: 50px;
 }
 
-
-/* #viewport {
-    overflow: hidden;
-    position: fixed;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-  }
-  
-  #scroll-container {
-    position: absolute;
-    overflow: hidden;
-    width: 100%;
-    will-change: transform;
-    backface-visibility: hidden;
-  } */
-  
-  
-  
-  .font{
-      
-    font-family: 'Libre Caslon Display', serif;
-    font-family: 'Prata', serif;
-    font-family: 'Spartan', sans-serif;
-    font-family: 'Philosopher', sans-serif;
-  
-  }

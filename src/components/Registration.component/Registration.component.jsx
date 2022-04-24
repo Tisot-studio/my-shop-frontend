@@ -1,5 +1,4 @@
 import Forminput from '../../components/form-input/Form-input';
-import Button from '../../components/Button/Button';
 import './registration.style.scss';
 import { useState, useEffect } from 'react';
 import { register } from '../../redux/user/user.actions';
@@ -17,12 +16,12 @@ const RegistrationForm = ()=> {
 
     const userRegister = useSelector((state) => state.userRegister)
 
-    const {error, loading, userInfo} = userRegister
+    const { userInfo } = userRegister
     const dispatch = useDispatch();
 
     const submitHandler = (e) => {
         e.preventDefault();
-        if(password == confirmPasword){
+        if(password === confirmPasword){
             dispatch(register(name, email, password, confirmPasword))
             console.log('sub')
         } else{

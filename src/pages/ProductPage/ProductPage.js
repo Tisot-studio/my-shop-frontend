@@ -15,7 +15,7 @@ const ProductPage = ({match, addItem, history}) => {
     const [prodQty, setProdQty] = useState(Number(1))
 
     const productList = useSelector(state => state.productList)
-    const {products, error, loading} = productList  
+    const {products, loading} = productList  
 
 
      useEffect(()=> {
@@ -91,14 +91,16 @@ const ProductPage = ({match, addItem, history}) => {
                         <input 
                         type='text'
                         value={prodQty}
-                        onChange={(e)=> setProdQty(Number(e.target.value))}
-                         />
+                        onChange={(e)=> e.target.value <= product.available ? 
+                            setProdQty(Number(e.target.value)) 
+                            : 
+                            setProdQty(Number(product.available))}/>
                         <div onClick={()=> prodQty < product.available ? setProdQty(prodQty + Number(1)) : null} className='increase-value'> + </div>
                     </div>
                 <div className='pp-buttons-container'>
                 <div className='add-to-bag-button'>
                 <button type='submit' value='Add to cart'> Add to cart </button></div>
-                <div onClick={ ()=> product.available > 0 ? shopNow() : null } className='shop-now-button'> <p>Shop now</p></div> 
+                <div onClick={()=> product.available > 0 ? shopNow() : null } className='shop-now-button'> <p>Shop now</p></div> 
                 </div>
                 </div>
                 </form>

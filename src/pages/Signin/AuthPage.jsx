@@ -5,7 +5,7 @@ import { useState } from 'react';
 import LeftToRirghtUnderline from '../../components/Left_to_Right_Undrline/LeftToRightUnderline'
 import { motion } from "framer-motion";
 import { signinupHidden } from '../../redux/user/user.actions';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import ResetPasswordForm from '../../components/resetPassword/ResetPasswordForm';
 
 
@@ -31,9 +31,8 @@ const AuthPage = ({hiddenAuth, userInfo}) => {
             animate={hiddenAuth || userInfo? "hidden" : "visible"}
             variants={variants}
             transition={{ delay: 0.2, duration: 0.6}}
-            initial={{ opacity: 0 }}
-        
-        >
+            initial={{ opacity: 0 }}>
+
             <motion.div 
             className="form-sign-in"
             animate={ hiddenAuth || userInfo ? {opacity: 0, y: 100} : {opacity: 1, y: -100}}
@@ -62,16 +61,12 @@ const AuthPage = ({hiddenAuth, userInfo}) => {
                 <RegistrationForm /> 
             }
              </div>
-             <div className='auth-img-container' >
+             <div className='auth-img-container'>
              <div className='auth-close-button' onClick={()=> dispatch(signinupHidden())}> &#10006;</div>
              </div>
             </motion.div>          
         </motion.div>
     )
-
 } 
-
-
-
 
 export default AuthPage;

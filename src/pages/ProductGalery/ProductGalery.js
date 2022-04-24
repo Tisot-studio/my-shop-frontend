@@ -4,7 +4,6 @@ import { useDispatch, useSelector } from 'react-redux';
 import { useEffect } from 'react';
 import { listProducts } from '../../redux/products/products.actions'
 import GradientSpinner from '../../components/Gradient-Spinner/GradientSpinner';
-import MySmoothScroll from '../../components/mySmoothScroll/mySmoothScroll';
 import NavBar from '../NavBar/NavBar';
 
 const ProductGalery = () => {
@@ -16,7 +15,7 @@ const ProductGalery = () => {
       }, [dispatch])
 
       const productList = useSelector(state => state.productList)
-      const {products, error, loading} = productList  
+      const {products, loading} = productList  
     
     return (
 

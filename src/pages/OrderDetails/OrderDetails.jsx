@@ -55,7 +55,7 @@ export const OrderDetails = ({match, history}) => {
               setSdkReady(true)
           }
       }
-    }, [dispatch, order, orderId, userInfo, error, successPay,])
+    }, [dispatch, order, orderId, userInfo, error, successPay, history])
 
     const sucessPaymentHandler = (paymentResult) =>{
       dispatch(payOrder(orderId, paymentResult))
@@ -85,7 +85,7 @@ export const OrderDetails = ({match, history}) => {
           {
             loading ? <GradientSpinner/> : order? order.orders.map(item => (
         <div className='ord-det-component'> 
-            <div> <img src={item.image} /> </div>
+            <div> <img src={item.image} alt='item_img'/> </div>
           <div className='ord-det-description-wraper'>
             <div className='ord-det-item-title'> Title: {item.title} </div>
             <div> Quantity:  {item.qty} </div>

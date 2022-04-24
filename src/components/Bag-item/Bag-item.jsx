@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import {clearItemFromBag} from '../../redux/bag/bag.actions';
 import { Link } from 'react-router-dom';
 
+
 const BagItem = ({item, clearItemFromBag}) => {
     const {_id, title, price, imageCover, quantity} = item;
     return (

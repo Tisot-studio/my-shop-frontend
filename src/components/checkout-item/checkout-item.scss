@@ -2,9 +2,8 @@
     margin-top: 20px;
     width: inherit;
     display: flex;
-    border-bottom: 1px solid white;
     font-size: 14px;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid rgb(134, 134, 134);
 
     .ch-it-img-container {
 
@@ -13,7 +12,7 @@
             height: auto;
         }
     }
-    
+
     .ch-it-description-container {
         width: 80%;
         margin-top: 40px;
@@ -64,22 +63,17 @@
                 .plus {
                     padding-top: 3px
                 }
-
             }
         }
-
     }
 
     .ch-it-remove-button {
         cursor: pointer;
         height: 30px;
         padding-top: 28px;
+
+        &:hover {
+            opacity: .8;
+        }
     }
-
-
-
-
-
-    
-    
 }

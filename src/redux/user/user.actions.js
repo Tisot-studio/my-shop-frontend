@@ -124,13 +124,9 @@ export const register = (name, email, password, re_password) => async(dispatch) 
 }
 
 // Загрузка информации о пользователе на страницу /profile
-export const getUserDetails = (id) => async(dispatch, getState) =>  {
+export const getUserDetails = (id) => async(dispatch) =>  {
     try {
         dispatch( {type: userActionTypes.USER_DETAIL_REQUEST})
-
-        const {
-            userLogin: {userInfo}
-        } = getState()
 
         const config = {
             headers: {
@@ -165,13 +161,9 @@ export const getUserDetails = (id) => async(dispatch, getState) =>  {
     }
 }
 
-export const updateUserProfile = (user) => async(dispatch, getState) =>  {
+export const updateUserProfile = (user) => async(dispatch) =>  {
     try {
         dispatch( {type: userActionTypes.USER_UPDATE_PROFILE_REQUEST})
-
-        const {
-            userLogin: {userInfo}
-        } = getState()
 
         const config = {
             headers: {

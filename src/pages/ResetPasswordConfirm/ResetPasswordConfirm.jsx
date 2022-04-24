@@ -1,7 +1,7 @@
 import './reset-password-confirm.scss';
 import {useState} from 'react'
-import { Link, Redirect } from 'react-router-dom'
-import {useDispatch, useSelector } from 'react-redux'
+import { Link } from 'react-router-dom'
+import {useDispatch } from 'react-redux'
 import { resetPasswordConfirm } from '../../redux/user/user.actions'
 import Forminput from '../../components/form-input/Form-input';
 import NavBar from '../NavBar/NavBar';

@@ -20,7 +20,6 @@ const Profile = ({history})=> {
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
     const [confirmPasword, setConfirmPassword] = useState('')
-    const [message, setMessage] = useState('')
 
     const userDetails = useSelector((state) => state.userDetails)
     const {user} = userDetails
@@ -29,7 +28,7 @@ const Profile = ({history})=> {
     const {success} = userUpdateProfile
 
     const myOrders = useSelector((state) => state.orderListMy)
-    const {orders, loading, error} = myOrders
+    const {orders, loading } = myOrders
     
     const dispatch = useDispatch();
 
@@ -58,14 +57,10 @@ const Profile = ({history})=> {
 
     const submitHandler = (e) => {
         e.preventDefault();
-        if(password == confirmPasword){
+        if(password === confirmPasword){
             dispatch(updateUserProfile({'name': name, 'email':email, 'password': password}))
             console.log(localStorage.getItem('access'))
-        } else{
-            setMessage('Wrong password')
-        }
-
-
+        } 
     }
 
 

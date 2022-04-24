@@ -2,16 +2,9 @@ import axios from "axios";
 import { ordersActionTypes } from "./orders.types";
 
 
-export const createOrder = (order) => async(dispatch, getState) =>  {
+export const createOrder = (order) => async(dispatch) =>  {
     try {
         dispatch( {type: ordersActionTypes.ORDER_CREATE_REQUEST})
-
-// Необходимые конфигурации если пользователь зарегистрирован. 
-// Здесь происходит отправка токена на сервер.
-        const {
-            userLogin: {userInfo}
-        } = getState()
-
         const config = {
             headers: {
                 'Content-type': 'application/json',
@@ -77,17 +70,13 @@ export const getOrderDetails = (id) => async (dispatch) => {
 
 
 // Получаем список всех заказов пользователя
-export const getMyOrders = () => async (dispatch, getState) => {
+export const getMyOrders = () => async (dispatch) => {
 
   try{
       dispatch({
         type: ordersActionTypes.ORDER_LIST_MY_REQUEST
       })
-
-    const {
-      userLogin: {userInfo},
-    } = getState()
-
+      
     const config = {
       headers: {
         'Content-type': 'application/json',

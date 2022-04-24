@@ -6,14 +6,18 @@
   height: 100%;
   margin: 0 10px 10px 10px;
   padding-bottom: 4px;
-  border-bottom: 0.5px solid rgb(197, 197, 197);;
+  border-bottom: 0.5px solid rgb(197, 197, 197);
   font-family: $body;
 
-    img {
-        width: 16%;
-    }
+  a {
+    color: rgb(197, 197, 197);
+  }
 
-    .bag-item-description-container {
+  img {
+      width: 16%;
+  }
+
+  .bag-item-description-container {
     width: 290px;
     padding-top: 12px;
     display: flex;
@@ -28,11 +32,11 @@
       margin: 3px 0px;
     }
 
-    }
+  }
 
-    .bg-it-remove-button {
-      font-size: 10px;
-      cursor: pointer;
-      width: 25px;
-    }
+  .bg-it-remove-button {
+    font-size: 10px;
+    cursor: pointer;
+    width: 25px;
+  }
 }

@@ -3,13 +3,8 @@ import BagItem from '../Bag-item/Bag-item';
 import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
 import { selectBagItems } from '../../redux/bag/bag.selector';
-import {Link, withRouter} from 'react-router-dom';
+import { withRouter } from 'react-router-dom';
 import { toggleBagHidden } from '../../redux/bag/bag.actions';
-
-
-// не всегда нужно писать mapDispatchToProps, если подразумевается вставить только одно действие
-// то можно обойтись посылом функции dispatch в компонент и затем вставить ее на нужное действие 
-// например onClick как в данном примере, послав туда нужное действие, например toggleBagHidden
 
 const BagDropdown = ({bagItems, history, dispatch})=> (
         <div class={`${bagItems.length > 2 ? 'overscroll':''} form-recover-pass-container`}> 
@@ -18,7 +13,7 @@ const BagDropdown = ({bagItems, history, dispatch})=> (
                 {
                     bagItems.length ?
                     bagItems.map(bagItem => (<BagItem key={bagItem._id} item={bagItem} />))
-                    : <p>Ваша корзина пуста</p>
+                    : <p>Your cart is empty</p>
                 }
                 </div>     
                 <div class="shopping-button">  

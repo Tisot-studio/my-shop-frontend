@@ -20,45 +20,45 @@
 
         margin-top: 250px;
         display: flex;
-      text-align: center;
-      width: 900px;
-      background-color: white;
+        text-align: center;
+        width: 900px;
+        background-color: white;
 
 
-          .sign-in-conatainer{
-            display: flex;
-            flex-direction: column;
-            width: 450px;
-            min-height: 460px;
-            background: rgb(255, 255, 255);
-            transition: all 0.5s ease-in-out;
+        .sign-in-conatainer{
+          display: flex;
+          flex-direction: column;
+          width: 450px;
+          min-height: 460px;
+          background: rgb(255, 255, 255);
+          transition: all 0.5s ease-in-out;
 
-          
+        
 
-          
-            .form-sign-in-nav {
-              margin-top: 20px;
-                display: flex;
-                justify-content: space-around;
-              }
-              
-
-              .sign-in-not-active,
-              .registration-button-not-active {
-                cursor: pointer;
-                color: rgb(182, 182, 182);
-                letter-spacing: 1px;
-              }
-              
-              
-              .sign-in-active {
-                color: black;
-              }
-
-              .registration-button-active {
-                    color: black;
-              }
+        
+          .form-sign-in-nav {
+            margin-top: 20px;
+              display: flex;
+              justify-content: space-around;
             }
+              
+
+          .sign-in-not-active,
+          .registration-button-not-active {
+            cursor: pointer;
+            color: rgb(182, 182, 182);
+            letter-spacing: 1px;
+          }
+          
+          
+          .sign-in-active {
+            color: black;
+          }
+
+          .registration-button-active {
+                color: black;
+          }
+      }
 
             .forgot-password {
               margin-top: 30px;
@@ -80,7 +80,7 @@
     }
 
     .auth-img-container {
-      background: url('../../images/fashion/7.jpg') no-repeat center center/cover;
+      background: url('./7.jpg') no-repeat center center/cover;
       width: 450px;
       min-height: 460px;
       display: flex;

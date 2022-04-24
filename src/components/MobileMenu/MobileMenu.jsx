@@ -45,10 +45,6 @@ export default function MobileMenu()  {
     function handleMenuClick() {
       setMenuOpen(!menuOpen)
     }
-    
-    function handleLinkClick() {
-      setMenuOpen(false)
-    }
 
     const menu = [<span><LeftToRightUnderline fontSize={'16px'}>  <Link to='/products'> Shop </Link> </LeftToRightUnderline> </span>, 
       <span ><LeftToRightUnderline fontSize={'16px'}> About </LeftToRightUnderline> </span>,  

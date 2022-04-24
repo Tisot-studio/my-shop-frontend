@@ -81,7 +81,7 @@ const CheckOut = ({total, bagItems, history})=> {
                 setEmail(userInfo.email)
             } 
         }
-    })
+    }, [bagItems.length, order, history, userInfo])
 
     return(
         <div className='check-out-page'>

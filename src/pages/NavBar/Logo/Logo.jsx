@@ -1,14 +1,4 @@
 import './logo.scss';
-import T from './svg/T.svg';
-import E from './svg/E.svg';
-import X from './svg/X.svg';
-import U from './svg/U.svg';
-import R from './svg/R.svg';
-import A from './svg/A.svg';
-
-
-
-import React from 'react'
 
 export default function Logo({color}) {
     return (
