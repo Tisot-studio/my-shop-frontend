@@ -3,8 +3,8 @@ import {useState} from 'react'
 import { Link } from 'react-router-dom'
 import {useDispatch } from 'react-redux'
 import { resetPasswordConfirm } from '../../redux/user/user.actions'
-import Forminput from '../../components/form-input/Form-input';
-import NavBar from '../NavBar/NavBar';
+import Forminput from '../../components/FormInput/FormInput';
+import NavBar from '../../components/NavBar/NavBar';
 
 export default function ResetPasswordConfirm({match}) {
 

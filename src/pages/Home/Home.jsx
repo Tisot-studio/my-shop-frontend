@@ -5,13 +5,12 @@ import img4 from './img/4.jpg';
 import Circle from './img/icons/Ellipse.png';
 import Arrow from './img/icons/Arrow.png';
 import { Link } from 'react-router-dom';
-import NavBar from '../NavBar/NavBar';
+
 
 export default function Home() {
 
     return (
         <div className='home-page'>
-            <NavBar />
             <section className='hp-hero-section-container'>
                 <div className='hp-empty-container'></div>
                 <div className='hp-img-wraper'>

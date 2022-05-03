@@ -55,11 +55,13 @@
                 font-size: 14px;
 
                 img {
-                    width: 100px;
+                    width: 6rem;
+                    height: 6rem;
                 }
 
                 .ord-det-description-wraper {
                     padding-top: 30px;
+                    margin-left: 1rem;
 
 
 
@@ -79,7 +81,6 @@
 
     .ord-det-general-info-wraper {
         height: 500px;
-        position: fixed;
         padding: 0px 20px;
         width: 350px;
 

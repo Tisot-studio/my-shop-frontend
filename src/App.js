@@ -8,11 +8,11 @@ import CheckOut from './pages/Checkout/Checkout';
 import { useDispatch } from 'react-redux';
 import { listProducts } from './redux/products/products.actions';
 import { useEffect } from 'react';
-import Activate from './pages/Account_activate/Activate';
-import Home from './pages/Home/Home.jsx';
-import Footer from './pages/Footer/Footer.jsx';
+import Activate from './pages/Activate/Activate';
+import Home from './pages/Home/Home';
+import Footer from './components/Footer/Footer';
 import ResetPasswordConfirm from './pages/ResetPasswordConfirm/ResetPasswordConfirm';
-import MobileMenu from './components/MobileMenu/MobileMenu';
+import NavBar from './components/NavBar/NavBar';
 
 
 const App = () => {
@@ -31,7 +31,7 @@ const App = () => {
 
   return (
     <div className='App' id='App'>
-      <MobileMenu />
+      <NavBar/>
       <Route exact path='/' component={Home} />
       <Route exact path='/products' component={ProductGalery} />
       <Route exact path='/products/:id' component={ProductPage} />

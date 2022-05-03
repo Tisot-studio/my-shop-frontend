@@ -2,8 +2,7 @@ import './order_details.scss'
 import { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { getOrderDetails, payOrder } from '../../redux/orders/orders.actions';
-import GradientSpinner from '../../components/Gradient-Spinner/GradientSpinner';
-import NavBar from '../NavBar/NavBar';
+import GradientSpinner from '../../components/GradientSpinner/GradientSpinner';
 import { PayPalButton } from "react-paypal-button-v2";
 import { ordersActionTypes } from '../../redux/orders/orders.types';
 
@@ -64,7 +63,6 @@ export const OrderDetails = ({match, history}) => {
 
    return (
           <div className='order-details-page'>
-            <NavBar/> 
           <div className='order-details-container'>
     {
       loading ? <GradientSpinner/> :
@@ -85,7 +83,7 @@ export const OrderDetails = ({match, history}) => {
           {
             loading ? <GradientSpinner/> : order? order.orders.map(item => (
         <div className='ord-det-component'> 
-            <div> <img src={item.image} alt='item_img'/> </div>
+            <div> <img src={`${item.image}`} alt='item_img'/> </div>
           <div className='ord-det-description-wraper'>
             <div className='ord-det-item-title'> Title: {item.title} </div>
             <div> Quantity:  {item.qty} </div>

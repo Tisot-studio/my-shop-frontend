@@ -211,7 +211,7 @@ export const activateAccount = (uid, token) => async dispatch => {
 
     // const body = JSON.stringify({uid, token})
     try {
-        await axios.post('http://127.0.0.1:8000/auth/users/activation/', {uid: uid, token: token}, config)
+        await axios.post('/auth/users/activation/', {uid: uid, token: token}, config)
 
         dispatch({
             type: userActionTypes.ACTIVATION_SUCCESS,
@@ -236,7 +236,7 @@ export const resetPassword = (email)=> async dispatch =>  {
     const body = JSON.stringify({email})
 
     try {
-        await axios.post('http://127.0.0.1:8000/auth/users/reset_password/', body, config)
+        await axios.post('/auth/users/reset_password/', body, config)
 
         dispatch({
             type: userActionTypes.PASSWORD_RESET_SUCCES
@@ -259,7 +259,7 @@ export const resetPasswordConfirm = (uid, token, new_password, re_new_password)=
     const body = JSON.stringify({uid, token, new_password, re_new_password})
 
     try {
-        await axios.post('http://127.0.0.1:8000/auth/users/reset_password_confirm/', body, config)
+        await axios.post('/auth/users/reset_password_confirm/', body, config)
 
         dispatch({
             type: userActionTypes.PASSWORD_RESET_CONFIRM_SUCCES

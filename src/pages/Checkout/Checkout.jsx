@@ -1,14 +1,12 @@
 import './check-out.scss';
-import { connect } from 'react-redux';
+import { connect, useDispatch, useSelector } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
 import { selectBagItems, selectBagTotal } from '../../redux/bag/bag.selector';
-import CheckOutItem from '../../components/checkout-item/CheckoutItem';
-import Forminput from '../../components/form-input/Form-input';
 import { useState, useEffect } from 'react';
 import { saveShippingAddress, bagReset } from '../../redux/bag/bag.actions';
-import { useDispatch, useSelector } from 'react-redux';
 import { createOrder } from '../../redux/orders/orders.actions';
-import NavBar from '../NavBar/NavBar';
+import CheckOutItem from '../../components/CheckoutItem/CheckoutItem';
+import Forminput from '../../components/FormInput/FormInput';
 
 
 const CheckOut = ({total, bagItems, history})=> {
@@ -85,7 +83,6 @@ const CheckOut = ({total, bagItems, history})=> {
 
     return(
         <div className='check-out-page'>
-            <NavBar/>
         <form onSubmit={submitHandler}>
             <div className='content-container'>
                 <div className='left-side'>
